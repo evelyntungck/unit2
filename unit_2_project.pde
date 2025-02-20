@@ -2,7 +2,7 @@
 // 2-3
 // February 10th, 2025
 
-int bunnyhop, giza1, giza2, giza3, giza4, terracota1, terracota2, terracota3, terracota4, terracota5, soh1, soh2, soh3, soh4, soh5, soh6, soh7, soh8, soh9, lsg;
+int bunnyhop, giza1, giza2, giza3, giza4, terracota1, terracota2, terracota3, terracota4, terracota5, soh1, soh2, soh3, soh4, soh5, soh6, soh7, soh8, soh9, lsg1, lsg2, lsg3, lsg4, lsg5, lsg6, lsg7, lsg8, lsg9, lsg10;
 
 void setup() {
 size (1000, 1000);
@@ -27,6 +27,7 @@ soh6 = 580;
 soh7 = 560;
 soh8 = 700;
 soh9 = 610;
+//initiate la sagrada familia
 strokeWeight (3);
 } // —— end of setup ——
 
@@ -76,25 +77,25 @@ stroke (0);
 strokeWeight (0.5);
 triangle (giza2, 275, giza3, 600, giza4, 600);
 
-////movement
-//giza1 = giza1 + 100;
-//giza2 = giza2 + 100;
-//giza3 = giza3 + 100;
-//giza4 = giza4 + 100;
+//movement
+giza1 = giza1 + 50;
+giza2 = giza2 + 50;
+giza3 = giza3 + 50;
+giza4 = giza4 + 50;
 
-////loop
-//  if (giza1 > 1000) {
-//  giza1 = -50;
-//  }
-//  if (giza2 > 1150) {
-//  giza2 = 100;
-//  }
-//  if (giza3 > 1250) {
-//  giza3 = 200;
-//  }
-//  if (giza4 > 1350) {
-//  giza4 = 300;
-//  }
+//loop
+  if (giza1 > 1000) {
+  giza1 = -50;
+  }
+  if (giza2 > 1150) {
+  giza2 = 100;
+  }
+  if (giza3 > 1250) {
+  giza3 = 200;
+  }
+  if (giza4 > 1350) {
+  giza4 = 300;
+  }
   
 ////terracotta army museum
 
@@ -112,12 +113,12 @@ line (terracota2, 540, terracota2, 600);
 rect (terracota4, 540, 30, 60);
 line (terracota5, 540, terracota5, 600);
 
-////movement
-//terracota1 = terracota1 + 100;
-//terracota2 = terracota2 + 100;
-//terracota3 = terracota3 + 100;
-//terracota4 = terracota4 + 100;
-//terracota5 = terracota5 + 100;
+//movement
+terracota1 = terracota1 + 50;
+terracota2 = terracota2 + 50;
+terracota3 = terracota3 + 50;
+terracota4 = terracota4 + 50;
+terracota5 = terracota5 + 50;
 
 //loop
   if (terracota1 > 1360) {
@@ -141,46 +142,95 @@ line (terracota5, 540, terracota5, 600);
 //background
 fill (75, 71, 66);
 stroke (255, 255, 255);
-strokeWeight (8);
+strokeWeight (5);
 triangle (soh1, 600, soh2, 600, soh3, 350);
 triangle (soh4, 600, soh5, 600, soh6, 410);
 triangle (soh7, 600, soh8, 600, soh9, 450);
 
 //movement
-soh1 = soh1 + 100;
-soh2 = soh2 + 100;
-soh3 = soh3 + 100;
-soh4 = soh4 + 100;
-soh5 = soh5 + 100;
-soh6 = soh6 + 100;
-soh7 = soh7 + 100;
-soh8 = soh8 + 100;
-soh9 = soh9 + 100;
+soh1 = soh1 + 50;
+soh2 = soh2 + 50;
+soh3 = soh3 + 50;
+soh4 = soh4 + 50;
+soh5 = soh5 + 50;
+soh6 = soh6 + 50;
+soh7 = soh7 + 50;
+soh8 = soh8 + 50;
+soh9 = soh9 + 50;
 
 //loop
-  if soh1 > 1520 {
+  if (soh1 > 1520) {
   soh1 = 470;
   }
   
-  if soh2 > 1620 {
+  if (soh2 > 1620) {
   soh2 = 570;
   }
   
-  if soh3 > 1555 {
+  if (soh3 > 1555) {
   soh3 = 505;
   }
   
-  if soh4 > 1545 {
-  soh4 = 495666
+  if (soh4 > 1545) {
+  soh4 = 495;
+  }
   
-  if soh5 > 1655
+  if (soh5 > 1655) {
+  soh5 = 605;
+  }
   
-  if soh6 > 1580
+  if (soh6 > 1580) {
+  soh6 = 530;
+  }
   
-  if soh7 > 1560
+  if (soh7 > 1560) {
+  soh7 = 510;
+  }
   
-  if soh8 > 1700
+  if (soh8 > 1700) {
+  soh8 = 650;
+  }
   
-  if soh9 > 1610
+  if (soh9 > 1610) {
+  soh9 = 560;
+  }
+
+////la sagrada familia
+
+//background
+fill (100, 77, 39);
+stroke (0);
+strokeWeight (0.5);
+rect (705, 325, 290, 15);
+triangle (705, 325, 850, 200, 995, 325);
+stroke (100, 77, 39);
+strokeWeight (4);
+line (745, 325, 955, 325);
+
+fill (139, 91, 13);
+stroke (0);
+strokeWeight (0.5);
+rect (705, 340, 290, 260);
+rect (705, 325, 40, 275);
+rect (955, 325, 40, 275);
+ellipse (850, 180, 40, 40);
+
+fill (100, 77, 39);
+stroke (0);
+strokeWeight (0.5);
+rect (830, 525, 40, 75);
+
+fill (54, 173, 172);
+stroke (0);
+strokeWeight (0.5);
+ellipse (850, 420, 50, 70);
+
+fill (155, 110, 37);
+stroke (0);
+strokeWeight (0.5);
+rect (700, 400, 50, 25);
+rect (700, 500, 50, 25);
+rect (950, 400, 50, 25);
+rect (950, 500, 50, 25);
 
 } // —— end of draw ——
